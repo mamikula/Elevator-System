@@ -8,7 +8,7 @@ Backend implemented with Java using Spring.
 Simple frontend application presenting prepared functionalities.
 
 ## How to run
-I have prepared docker-compose.yaml and sript.sh that allows to run backend and frontend. You can run application by calling:
+I have prepared docker-compose.yaml and sript.sh that allows to run backend and frontend. You can run application by calling from terminal(or try to double click on script.sh):
 ```bash
 sh script.sh
 ```
