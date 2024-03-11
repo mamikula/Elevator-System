@@ -14,14 +14,6 @@ docker-compose up
 ```
 from docker catalog.
 
-## Frontend
-A frontend application consists of several components:
-* column - represents one floor at which the elevator can stop
-* columnPanel - shows a common interface for summoning the elevator to a floor, you can choose if u want to go up or down
-* destinationPanel - it is a panel inside the elevator, you can choose number of floor where do you want to go
-* elevator
-* elevatorPanel - it is a panel to to manage amount of elevators in simulation
-
 ## Backend 
 Project structure consists of 3 main layers:
 * controllers
@@ -61,6 +53,14 @@ calculates the nearest one. If there is no elevator which is heading in the same
 ## Tests
 
 I have also included some tests to implemented functionalities.
+
+## Frontend
+A frontend application consists of several components:
+* column - represents one floor at which the elevator can stop
+* columnPanel - shows a common interface for summoning the elevator to a floor, you can choose if u want to go up or down
+* destinationPanel - it is a panel inside the elevator, you can choose number of floor where do you want to go
+* elevator
+* elevatorPanel - it is a panel to to manage amount of elevators in simulation
 
 ## Summary
 
