@@ -1,0 +1,12 @@
+
+.elevator {
+    width: 3vw; 
+    height: 7vh; 
+    background-color: #ccc; 
+    border: none;
+    cursor: pointer;
+  }
+  
+.elevator:hover{
+  background-color: #575656;
+}

@@ -1,0 +1,25 @@
+
+.column {
+    display: flex;
+    flex-direction: column;
+    height: 80vh;
+    width: 10vw;
+    background-color: #f0f0f0; 
+    border: 3px solid #ccc; 
+    position: relative; 
+    align-items: center;
+  }
+  
+  .floor {
+    flex: 1;
+    border-top: 2px solid #ccc; 
+    width: 100%;
+  }
+  
+  .elevator-position {
+    position: absolute;
+    height: calc(10% - 1px); 
+    transition: bottom 1s ease; 
+    transform: translateY(1.1vh);
+  }
+  

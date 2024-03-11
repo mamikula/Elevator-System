@@ -1,0 +1,50 @@
+.App {
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+  font-family: 'Roboto',sans-serif;
+  width: 100vw;
+  height: 100vh;
+}
+
+.Column {
+  margin-right: 10px;
+}
+
+.Column-container{
+  display: flex; 
+  width: 80vw;
+}
+
+.column-panel {
+  display: flex;
+  flex-direction: column-reverse;
+  padding-right: 0.25vw;
+}
+
+.Step-button{
+  position: absolute;
+  margin: 0;
+  bottom: 4vh;
+  background: linear-gradient(to left, #FFDA1A 10%, #191C24);
+  padding: 20px 40px;
+  border: none;
+  border-radius: 5px;
+  color: gainsboro;
+  font-weight: bold;
+  font-size: large;
+}
+
+.Column-panel{
+  display: flex;
+  flex-direction: column;
+  height: 80vh;
+  width: 10vw;
+  background-color: #f0f0f0; 
+  border: 3px solid #ccc; 
+  position: relative; 
+}
+
+.Elevator-panel{
+  padding-left: 0.5vw;
+}

@@ -1,0 +1,22 @@
+.Panel-button{
+    background: linear-gradient(to left, #FFDA1A 10%, #191C24);
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    font-size: small;
+    cursor: pointer;
+}
+
+.List-container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.Panel-button:disabled{
+    opacity: 50%;
+    cursor: not-allowed;
+}
