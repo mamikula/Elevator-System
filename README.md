@@ -22,5 +22,38 @@ A frontend application consists of several components:
 * elevator
 * elevatorPanel - it is a panel to to manage amount of elevators in simulation
 
+## Backend 
+Project structure consists of 3 main layers:
+* controllers
+* services
+* repositories
 
+and 3 additionals:
+* models 
+* config
+* enums
 
+## Algorithm
+
+```java
+ public Elevator getNextElevator(int currentFloor, Direction direction) {
+        Optional<Elevator> closestElevator = elevators.values().stream()
+                .filter(elevator -> elevator.getCurrentDirection().equals(direction) || elevator.getCurrentDirection().equals(Direction.WAITING))
+                .min(Comparator.comparingInt(elevator -> Math.abs(elevator.getCurrentFloor() - currentFloor)));
+
+        return closestElevator.orElseGet(() -> elevators.values().stream()
+                .min(Comparator.comparingInt(elevator -> Math.abs(elevator.getCurrentFloor() - currentFloor))).get());
+    }
+```
+
+I have implemented FCFS algorithm, each elevator includes Queue which stores numbers of floors numbers. When user calls elevator specifying floor and direction, algorithm filters all existing elevators by direction and then 
+calculates the nearest one. If there is no elevator which is heading in the same direction, algorithm returns the nearest one to indicated floor.
+
+```java
+@Override
+    public void pickUp(int currentFloor, Direction direction) {
+        elevatorRepository.getNextElevator(currentFloor, direction)
+                .getFloorsQueue()
+                .add(new NextFloor(currentFloor, direction));
+    }
+```
