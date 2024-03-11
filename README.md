@@ -61,3 +61,10 @@ calculates the nearest one. If there is no elevator which is heading in the same
 ## Tests
 
 I have also included some tests to implemented functionalities.
+
+## Summary
+
+1. Backend and Frontend application are clearly and simply written.
+2. Code works and seems to be bugs free :D
+3. The visual part could be better refined.
+4. Maybe REST is not the best choice(sockets?).
