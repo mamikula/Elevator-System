@@ -6,7 +6,7 @@ function DestinationPanel(destinationPanelProps) {
     const { elevatorId } = destinationPanelProps;
   return (
     <div><div>
-    <h3>Choose Destination Floor for Elevator {elevatorId}</h3>
+    <h3>Choose Destination Floor for Elevator {elevatorId + 1}</h3>
     <div className='Buttons-panel'>
       {[...Array(10)].map((_, floor) => (
         <button className='Destination-button' key={floor} onClick={() => selectDestination(elevatorId, floor)}>
