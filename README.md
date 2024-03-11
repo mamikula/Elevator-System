@@ -57,3 +57,7 @@ calculates the nearest one. If there is no elevator which is heading in the same
                 .add(new NextFloor(currentFloor, direction));
     }
 ```
+
+## Tests
+
+I have also included some tests to implemented functionalities.
