@@ -62,6 +62,8 @@ A frontend application consists of several components:
 * elevator
 * elevatorPanel - it is a panel to to manage amount of elevators in simulation
 
+![Application](pictures/application.jpg)
+
 ## Summary
 
 1. Backend and Frontend application are clearly and simply written.
