@@ -62,7 +62,11 @@ A frontend application consists of several components:
 * elevator
 * elevatorPanel - it is a panel to to manage amount of elevators in simulation
 
-![Application](pictures/application.jpg)
+![Application](pictures/aplication.png)
+
+The gray table in the front represents building and each row is a floor. By clicking on an elevator you will see panel that allows
+picking destination floor. Panel with blue buttons represents, a common panel which allows call an elevetor. And the last "Elevator Panel" 
+allows to add new or delete existing elevators, it also shows the state of each elevator.
 
 ## Summary
 
